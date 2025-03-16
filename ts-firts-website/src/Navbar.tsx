@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import logo from "./logo.png";
+import logo from "./Logo.png";
 
 interface NavbarProps {
     onLogout: () => void;
@@ -11,7 +11,7 @@ const Navbar:React.FC<NavbarProps> = ({onLogout, userName}) => {
     return (
         <nav className="navbar">
             <div className="navbar-left">
-                <img src={logo} alt="logo" className="logo"/>
+                <img src={logo} alt="Logo" className="nogo"/>
                 <span className="username">{userName}</span>
             </div>
 

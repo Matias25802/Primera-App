@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes, Navigate} from 'react-router-dom';
 import './style.css'
-import Home from './home';
-import About from './about';
+import Home from './Home';
+import About from './About';
 import Gallery from './Gallery';
 import Navbar from './Navbar';
 import Login from './Login';
@@ -11,7 +11,7 @@ import Login from './Login';
 const App:React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [userName, setUserName] = useState("");
-  const validUser = {email: "admin@gmail.com", password: "12345", name:"AD: Carlos Tiburcio"};
+  const validUser = {email: "admin@gmail.com", password: "12345", name:"AD: Wilfran Matias"};
   const handlelogin = (email: string, password:string) => {
     if(email === validUser.email && password === validUser.password){
       setIsAuthenticated(true);
